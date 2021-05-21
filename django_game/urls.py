@@ -1,4 +1,4 @@
-from .views import main
+from .views import main, update_server
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
@@ -11,7 +11,7 @@ app_name = 'gameapp'
 urlpatterns = [
     path('', main, name='index'),
     path('admin/', admin.site.urls),
-    # path('contacts/', contacts, name='contacts'),
+    path('update_server/', update_server, name='update_server'),
     # path('products/', include(urls, namespace='products')),
     # path('auth/', include('gameapp.urls', namespace='game_on')),
 #     path('basket/', include('basketapp.urls', namespace='basket')),
