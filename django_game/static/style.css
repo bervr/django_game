@@ -1,15 +1,16 @@
 body
-{border:1px dotted yellow;
+{
+    /*border:1px dotted yellow;*/
 margin:0;
 padding:0;
 width:100%;
 height:100%;
-background:brown;}
+background:darkgreen;}
 
 .container{
-background:red;
-width:250px;
-height:100px;}
+/*background:greenyellow;*/
+max-width:1366px;
+}
 
 .box
 {display:flex;
@@ -17,14 +18,41 @@ height:100px;}
 .box > div{
   display:flex;
   justify-content:center;
+    flex-wrap: wrap;
 }
 
 .one
-{
- background:green;
+{display: flex;
+flex-direction: column;
+background:green;
 flex-basis:66.66%;
+margin: 10px;
 }
+.number{
+    color: yellow;
+}
+.levelname{
+    color: yellow;
+    align-content: center;
+}
+.task{
+    color: yellow;
+}
+.levelimage{
+        width = 100%;
+    }
 
 .two
-{background:blue;
-flex-basis:33.33%;}
+{background:lightgrey;
+flex-basis:33.33%;
+margin: 10px;}
+
+ @media screen and (device-width: 1024px) {
+    .container{
+    max-width:480px;
+}
+    .levelimage{
+        max-width: 300px;
+    }
+
+   }

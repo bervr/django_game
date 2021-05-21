@@ -41,6 +41,8 @@ class CorrectAnswers(models.Model):
 
     )
     answer = models.CharField(max_length=256)
+    def __str__(self):
+        return self.answer
 
 
 class UserAnswers(models.Model):
@@ -50,6 +52,8 @@ class UserAnswers(models.Model):
         verbose_name='уровень',
     )
     answer = models.CharField(max_length=256)
+    def __str__(self):
+        return self.answer
 
 
 class Promt(models.Model):
