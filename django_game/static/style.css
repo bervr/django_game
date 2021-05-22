@@ -49,6 +49,10 @@ margin: 10px;
 display: flex;
 flex-direction: column;
 }
+.index{
+    display: flex;
+    flex-direction: column;
+}
 
 .form-horizontal{
     max-height: 300px;

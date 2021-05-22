@@ -1,0 +1,17 @@
+ [
+   {
+      "level_of_game": 1,
+      "name": "заглушка",
+      "task": "тра-та-та",
+      "image": "level_img/11827_FYJjkpO.jpg",
+      "level_done": false
+
+  },
+  {
+      "level_of_game": 1,
+      "name": "to",
+      "task": "123",
+      "image": "",
+      "level_done": false
+  }
+ ]

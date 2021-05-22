@@ -8,6 +8,11 @@ class Game(models.Model):
     game_name = models.CharField(max_length=64, verbose_name='название игры')
     Game_go = models.BooleanField(default=False)
 
+    @property
+    def now_level(self):
+        now_level = models.IntegerField(default=1)
+        return now_level
+
     def __str__(self):
         return self.game_name
 
@@ -27,7 +32,11 @@ class GameLevel(models.Model):
         upload_to='level_img',
         blank=True,
     )
+    level_active = models.BooleanField(default=False)
     level_done = models.BooleanField(default=False)
+    level_last = models.BooleanField(default=False)
+    started = models.DateTimeField(blank=True, null=True)
+
 
     def __str__(self):
         return f'({self.number} - {self.name})'
@@ -42,8 +51,7 @@ class CorrectAnswers(models.Model):
     )
     answer = models.CharField(max_length=256)
     def __str__(self):
-        return self.answer
-
+        return f'({self.level} - {self.answer})'
 
 class UserAnswers(models.Model):
     level = models.ForeignKey(
@@ -72,3 +80,5 @@ class Promt(models.Model):
     )
     counter = models.IntegerField(
     )
+    def __str__(self):
+        return f'(Уровень {self.level} подсказка {self.counter})'
