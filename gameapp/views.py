@@ -6,44 +6,36 @@ from django.urls import reverse
 
 from .models import Game, GameLevel, CorrectAnswers, UserAnswers, Promt
 from .form import GetUserAnswer
-from django.views.generic import DetailView
-from django.views.generic.list import ListView
+
 
 # Create your views here.
 
+def game_level(request, pk):
 
+    level = GameLevel.objects.get(number=pk)
+    correct_answers = CorrectAnswers.objects.filter(level= level)
+    user_answers = UserAnswers.objects.all().order_by('-created')
+    last_user_answer = user_answers[0]
+    other_user_answer = user_answers[1:]
 
+    if request.method == 'POST':
+        form = GetUserAnswer(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
 
-class GameLevelView(DetailView):
-    model = GameLevel
-    template_name = 'game.html'
-    context_object_name = 'level'
+            return HttpResponseRedirect(reverse('game:level', args=[pk]))
+    else:
+        form = GetUserAnswer(initial={'level': level})
 
+    content = {
+        'title': level.name,
+        'form': form,
+        'pk': pk,
+        'correct_answers': correct_answers,
+        'user_answers': user_answers,
+        'level': level,
+        'last_user_answer': last_user_answer,
+        'other_user_answer': other_user_answer
+    }
 
-    @method_decorator(user_passes_test(lambda u: u.is_staff))
-    def dispatch(self, request, *args, **kwargs):
-        return super().dispatch(request, *args,**kwargs)
-
-
-
-    def get_context_data(self, **kwargs):
-
-        # if request.method == 'POST':
-        #     register_form = GetUserAnswer(request.POST, request.FILES)
-        #
-        #     if register_form.is_valid():
-        #         register_form.save()
-        #         return HttpResponseRedirect(reverse('level:level'))
-        # else:
-        #     register_form = GetUserAnswer()
-
-        context = super().get_context_data(**kwargs)
-        level =  self.get_object()
-        correct_answers = CorrectAnswers.objects.filter(level_id = level)
-        user_answers = UserAnswers.objects.all()
-        context.update({'title':level.name,
-                        'correct_answers':correct_answers,
-                        'user_answers':user_answers,
-                        # 'register_form': register_form,
-                        })
-        return context
+    return render(request, 'game.html', content)

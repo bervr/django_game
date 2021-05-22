@@ -52,8 +52,11 @@ class UserAnswers(models.Model):
         verbose_name='уровень',
     )
     answer = models.CharField(max_length=256)
+    created = models.DateTimeField(auto_now_add=True, blank=True)
     def __str__(self):
         return self.answer
+
+
 
 
 class Promt(models.Model):

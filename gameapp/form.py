@@ -5,7 +5,8 @@ from .models import UserAnswers
 class GetUserAnswer(forms.ModelForm):
     class Meta:
         model = UserAnswers
-        fields = '__all__'
+        # fields = ('answer',)
+        fields ='__all__'
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

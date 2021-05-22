@@ -13,7 +13,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('game/', update_server, name='update_server'),
     # path('game/', include(urls, namespace='products')),
-    path('game/', include('gameapp.urls', namespace='game_on')),
+    path('game/', include('gameapp.urls', namespace='game')),
 #     path('basket/', include('basketapp.urls', namespace='basket')),
 #     path('admin_staff/', include('adminapp.urls', namespace='admin_staff')),
 ]

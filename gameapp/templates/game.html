@@ -23,18 +23,24 @@
 
     </div>
     <div class="two">
+     <form class="form-horizontal" action="{% url 'game:level' pk %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="form-control" type="submit" value="мой ответ!">
+    </form>
     <ul class="list-group">
     {% if user_answers %}
         <li class="list-group-item active">
-            {{ user_answers }}
+            {{ last_user_answer }}
         </li>
-        {% for answer in user_answers %}
+        {% for answer in other_user_answer %}
             <li class="list-group-item">{{ answer }}</li>
         {% endfor %}
     {% endif %}
     </ul>
     </div>
   </div>
+    <div>{{ test }} </div>
 </div>
 {% endblock %}
 </body>

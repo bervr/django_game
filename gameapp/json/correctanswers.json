@@ -1,0 +1,34 @@
+[
+    {
+    "model": "gameapp.correctanswers",
+    "pk": 1,
+    "fields": {
+      "level": 1,
+      "answer": "123"
+    }
+  },
+  {
+    "model": "gameapp.correctanswers",
+    "pk": 2,
+    "fields": {
+      "level": 1,
+      "answer": "1"
+    }
+  },
+  {
+    "model": "gameapp.correctanswers",
+    "pk": 3,
+    "fields": {
+      "level": 2,
+      "answer": "222"
+    }
+  },
+  {
+    "model": "gameapp.correctanswers",
+    "pk": 4,
+    "fields": {
+      "level": 2,
+      "answer": "234"
+    }
+  }
+]

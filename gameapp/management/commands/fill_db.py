@@ -2,7 +2,7 @@ import os, json
 
 from django.core.management.base import BaseCommand
 from django.contrib.auth.models import User
-# from mainapp.models import Product, ProductCategory
+from gameapp.models import GameLevel, CorrectAnswers
 
 JSON_PATH = 'gameapp/json'
 
@@ -12,12 +12,12 @@ JSON_PATH = 'gameapp/json'
 #
 class Command(BaseCommand):
     def handle(self, *args, **options):
-#         categories =  load_from_json('categories')
-#         ProductCategory.objects.all().delete()
-#         for category in categories:
-#             new_category = ProductCategory(**category)
-#             new_category.save()
-#
+        # levels = load_from_json('levels')
+        # GameLevel.objects.all().delete()
+        # for level in levels:
+        #     new_level = GameLevel(**level)
+        #     new_level.save()
+
 #         products = load_from_json('products')
 #         for product in products:
 #             category_name = product['category']

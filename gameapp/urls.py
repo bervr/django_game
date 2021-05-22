@@ -5,5 +5,5 @@ import gameapp.views as gameapp
 app_name = 'gameapp'
 
 urlpatterns = [
-    path('level/<int:pk>/', gameapp.GameLevelView.as_view(), name='level'),
+    path('level/<int:pk>/', gameapp.game_level, name='level'),
     ]
