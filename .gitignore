@@ -2,3 +2,4 @@
 .idea
 db.sqlite3
 ./django_game/settings.py
+settings.py
