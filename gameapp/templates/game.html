@@ -17,8 +17,9 @@
         <div class="number"> Уровень {{ level.number }}</div>
         <div class="levelname">{{ level.name }}</div>
         <div class="task">{{ level.task }}</div>
+        {% if level.image %}
         <div ><img class="levelimage" src="/media/{{ level.image }}"
-         alt="{{level.name }}">
+         alt="{{level.name }}">{% endif %}
         </div>
 
     </div>
@@ -40,7 +41,7 @@
     </ul>
     </div>
   </div>
-    <div>{{ test }} </div>
+{#    <div>{{ test }} </div>#}
 </div>
 {% endblock %}
 </body>

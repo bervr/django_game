@@ -8,10 +8,9 @@ class Game(models.Model):
     game_name = models.CharField(max_length=64, verbose_name='название игры')
     Game_go = models.BooleanField(default=False)
 
-    @property
-    def now_level(self):
-        now_level = models.IntegerField(default=1)
-        return now_level
+
+    now_level = models.IntegerField(default=1)
+
 
     def __str__(self):
         return self.game_name
