@@ -1,8 +1,8 @@
 [
 
   {
-
-      "game_name": "тест игра",
-      "Game_go": false
-  }
+      "game_name": "День рожденья",
+      "Game_go": true,
+      "now_level": 1
+    }
   ]

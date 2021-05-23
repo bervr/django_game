@@ -27,12 +27,13 @@ class Command(BaseCommand):
             new_level = GameLevel(**level)
             new_level.save()
 
-        # products = load_from_json('products')
-        # for product in products:
-        #     category_name = product['category']
-        #     category_obj = ProductCategory.objects.get(href = category_name)
-        #     product['category'] = category_obj
-        #     new_product = Product(**product)
-        #     new_product.save()
+        answers = load_from_json('correctanswers')
+        CorrectAnswers.objects.all().delete()
+        for answer in answers:
+            _level = answer['level']
+            level_obj = GameLevel.objects.get(number= _level)
+            answer['level'] = level_obj
+            new_answer = CorrectAnswers(**answer)
+            new_answer.save()
 
-        User.objects.create_superuser('django', 'django@1.local', '123')
+        # User.objects.create_superuser('django', 'django@1.local', '123')

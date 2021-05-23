@@ -1,17 +1,108 @@
- [
-   {
+[{
+      "number" : 1,
       "level_of_game": 1,
-      "name": "заглушка",
-      "task": "тра-та-та",
-      "image": "level_img/11827_FYJjkpO.jpg",
-      "level_done": false
+      "name": "Заглушка",
+      "task": "Миниквест. Выдачу подсказок я не успел реализовать, так что если тупишь - пиши в телегу: орги, игра говно!\r\n\r\nУровней не много, но финиш ограничен по времени, задание есть как реальные так и виртуальные\r\nвезде ко -1\r\nметок нет если иное не написано в задании\r\n\r\nчтобы перейти дальше напиши  'понятно\"",
+      "image": "",
+      "level_active": true,
+      "level_done": false,
+      "level_last": false,
+      "started": null
 
   },
   {
+      "number" : 2,
       "level_of_game": 1,
-      "name": "to",
-      "task": "123",
+      "name": "Вводное",
+      "task": "Виртуальное\r\nНужно решить - с чего же начать поиски.\r\nА тема игры какая? что-то про день рожденья.\r\nЧто если это день рожденья Алены?\r\n\r\nформат ответа 6 цифр",
       "image": "",
-      "level_done": false
-  }
- ]
+      "level_active": false,
+      "level_done": false,
+      "level_last": false,
+      "started": null
+
+  },
+  {
+      "number" : 3,
+      "level_of_game": 1,
+      "name": "начинать искать нужно там где потерял",
+      "task": "Реальное\r\nТы хорошо справляешься и казалось бы не надо ехать домой чтобы посмотреть ее свидетельство о рождении. Но надо. езжай посмотреть на это\r\n\r\nформат ответа 6 цифр",
+      "image": "level_img/рыба.jpg",
+      "level_active": false,
+      "level_done": false,
+      "level_last": false,
+      "started": null
+
+  },
+  {
+      "number" : 4,
+      "level_of_game": 1,
+      "name": "а если здесь нет то где еще может быть?",
+      "task": "Реальное. \r\nМожет быть под сумкой? \r\nгде же она последний раз так стояла?\r\n\r\nи ключи , понадобятся ключи",
+      "image": "level_img/3c00906a-403e-4c00-a9ee-1024d66323c4.jpg",
+      "level_active": false,
+      "level_done": false,
+      "level_last": false,
+      "started": null
+
+  },
+  {
+      "number" : 5,
+      "level_of_game": 1,
+      "name": "как же называется это растение? у вас все время растет...",
+      "task": "Виртуальное. код проверочный, 2 слова, если ок - то на следующем уровне скажет куда ехать)\r\nТут  только кошачий переполох какой-то...\r\nНадо поехать посмотреть еще где-нибудь. \r\nГде вобще чаще всего случаются дни рождения?\r\nА...",
+      "image": "level_img/где.jpg",
+      "level_active": false,
+      "level_done": false,
+      "level_last": false,
+      "started": null
+
+  },
+  {
+        "number" : 6,
+      "level_of_game": 1,
+      "name": "да, путь не близкий",
+      "task": "Реально надо ехать в медгард.\r\nКод на\r\nметок нет",
+      "image": "",
+      "level_active": false,
+      "level_done": false,
+      "level_last": false,
+      "started": null
+
+  },
+  {
+      "number" : 7,
+      "level_of_game": 1,
+      "name": "надо подумать",
+      "task": "чего-то явно не хватает, все время ускользает из памяти",
+      "image": "level_img/ы.png",
+      "level_active": false,
+      "level_done": false,
+      "level_last": false,
+      "started": null
+
+  },
+  {
+      "number" : 8,
+      "level_of_game": 1,
+      "name": "путь не близкий",
+      "task": "да, это Яго, он же Яндекс Go, он же такси. А куда теперь?\r\nРебус какой-то",
+      "image": "level_img/аштшыр.png",
+      "level_active": false,
+      "level_done": false,
+      "level_last": false,
+      "started": null
+
+  },
+  {
+      "number" : 9,
+      "level_of_game": 1,
+      "name": "все!",
+      "task": "да, перчини на набережной там тебя уже ждут!\r\n для завершения напиши ДР",
+      "image": "",
+      "level_active": false,
+      "level_done": false,
+      "level_last": true,
+      "started": null
+
+  }]

@@ -1,34 +1,120 @@
 [
-    {
-    "model": "gameapp.correctanswers",
-    "pk": 1,
-    "fields": {
+
+  {
       "level": 1,
-      "answer": "123"
-    }
+      "answer": "\"понятно\""
+
   },
   {
-    "model": "gameapp.correctanswers",
-    "pk": 2,
-    "fields": {
-      "level": 1,
-      "answer": "1"
-    }
-  },
-  {
-    "model": "gameapp.correctanswers",
-    "pk": 3,
-    "fields": {
       "level": 2,
-      "answer": "222"
-    }
+      "answer": "190718"
+
   },
   {
-    "model": "gameapp.correctanswers",
-    "pk": 4,
-    "fields": {
+
       "level": 2,
-      "answer": "234"
-    }
+      "answer": "19.07.18"
+
+  },
+  {
+
+      "level": 2,
+      "answer": "19/07/18"
+
+  },
+  {
+
+      "level": 3,
+      "answer": "260315"
+
+  },
+  {
+
+      "level": 3,
+      "answer": "26.03.15"
+
+  },
+  {
+
+      "level": 4,
+      "answer": "Кошачий переполох"
+
+  },
+  {
+
+      "level": 4,
+      "answer": "кошачий переполох"
+
+  },
+  {
+
+      "level": 4,
+      "answer": "кошачийпереполох"
+
+  },
+  {
+
+      "level": 5,
+      "answer": "Аленин роддом"
+
+  },
+  {
+
+      "level": 5,
+      "answer": "Алёнин роддом"
+
+  },
+  {
+
+      "level": 5,
+      "answer": "Аленин родом"
+
+  },
+  {
+
+      "level": 5,
+      "answer": "аленинроддом"
+
+  },
+  {
+
+      "level": 7,
+      "answer": "яго"
+
+  },
+  {
+
+      "level": 7,
+      "answer": "такси"
+
+  },
+  {
+
+      "level": 7,
+      "answer": "яндекс такси"
+
+  },
+  {
+
+      "level": 8,
+      "answer": "перчини"
+
+  },
+  {
+
+      "level": 8,
+      "answer": "перчини на набережной"
+
+  },
+  {
+
+      "level": 9,
+      "answer": "ДР"
+
+  },
+  {
+      "level": 9,
+      "answer": "др"
+
   }
 ]
