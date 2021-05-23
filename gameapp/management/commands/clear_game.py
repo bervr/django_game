@@ -2,7 +2,7 @@
 
 from django.core.management.base import BaseCommand
 
-from gameapp.models import GameLevel, CorrectAnswers, Game
+from gameapp.models import GameLevel, UserAnswers, Game
 
 #
 class Command(BaseCommand):
@@ -19,4 +19,6 @@ class Command(BaseCommand):
                 level.level_active =False
             level.level_done = False
             level.save()
+        user_answ = UserAnswers.objects.all()
+        user_answ.delete()
 
